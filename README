@@ -1,0 +1,22 @@
+# EM Pulse Sequence Generator
+
+This project implements a **pulse sequence algorithm** for Electro-Magnetic (EM) dimming, designed for display driver systems that require smooth and flicker-free brightness control.  
+
+Instead of dimming linearly, the algorithm generates **deterministic, balanced pulse sequences** that distribute *off-time* evenly. This ensures early pulses reduce first while maintaining uniformity across the sequence. Flicker metrics (max/avg deviation) are also computed to evaluate stability.  
+
+Results can be exported to Excel (`.xlsx`) using **OpenPyXL**, with color-coded formatting for easy visualization and validation.
+
+---
+
+## ✨ Features
+- Generates deterministic dimming pulse sequences for **1–64 pulses**  
+- Outputs Excel diagrams (`.xlsx`) with clear, color-coded formatting  
+- Reports **flicker metrics** (maximum and average deviation)  
+- Lightweight Python script with no external dependencies beyond OpenPyXL  
+
+---
+
+## 📦 Installation
+Clone the repository and install the required Python package:
+```bash
+pip install openpyxl
